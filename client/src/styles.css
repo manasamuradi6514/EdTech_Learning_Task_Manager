@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eef1f7;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #2d2d2d;
+  font-weight: 600;
+}
+
+.container, .dashboard-container {
+  max-width: 480px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.10);
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 18px 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #6c63ff;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #5a52f3;
+  transform: translateY(-2px);
+}
+.logout-btn, .dashboard-container > button {
+  background: #ff4d4d !important;
+}
+.logout-btn:hover, .dashboard-container > button:hover {
+  background: #e60000 !important;
+}
+
+.dashboard-container h2 {
+  margin-bottom: 25px;
+}
+
+.dashboard-container p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+form input {
+  margin-top: 10px;
+}
+
+.task-card {
+  background: #ffffff;
+  margin: 15px 0;
+  padding: 18px;
+  border-left: 4px solid #6c63ff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  transition: 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 5px 17px rgba(0,0,0,0.12);
+}
+
+.task-card h4 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.task-card p {
+  color: #555;
+  font-size: 14px;
+  margin: 7px 0;
+}
+
+.task-card select {
+  margin-top: 10px;
+}
+
+.task-card button {
+  background: #ff4d4d;
+  margin-top: 12px;
+}
+
+.task-card button:hover {
+  background: #d90000;
+}
+
+@media (max-width: 520px) {
+  .container, .dashboard-container {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  h2, h3 {
+    font-size: 20px;
+  }
+}
+
+
+.login-box h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+}
+
+.login-box form {
+  margin-top: 10px;
+}
+
+.login-box button {
+  margin-top: 15px;
+}
+
+.login-box {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.dashboard-container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.10);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.dashboard-container h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.dashboard-container p {
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.dashboard-container > button {
+  background: #ff4d4d;
+  width: 150px;
+  margin: 0 auto 30px auto;
+  display: block;
+}
+
+.dashboard-container > button:hover {
+  background: #d90000;
+}
+
+.dashboard-container h3 {
+  margin-top: 30px;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  border-left: 4px solid #6c63ff;
+  padding-left: 10px;
+}
+
+.dashboard-container form {
+  background: #f8f9ff;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+}
+
+.dashboard-container form input {
+  background: #fff;
+  margin-top: 10px;
+}
+
+.dashboard-container form button {
+  margin-top: 12px;
+  background: #6c63ff;
+}
+
+.dashboard-container form button:hover {
+  background: #5a52f3;
+}
+
+.task-card {
+  background: #ffffff;
+  padding: 18px 20px;
+  margin: 18px 0;
+  border-radius: 12px;
+  border-left: 5px solid #6c63ff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease-in-out;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.12);
+}
+
+.task-card h4 {
+  margin: 0;
+  color: #2d2d2d;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.task-card p {
+  margin: 7px 0;
+  color: #444;
+  font-size: 14.5px;
+}
+
+.task-card select {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.task-card button {
+  margin-top: 12px;
+  background: #ff4d4d;
+}
+
+.task-card button:hover {
+  background: #d90000;
+}
+
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    margin: 15px;
+    padding: 20px;
+  }
+}
+
